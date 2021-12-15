@@ -97,8 +97,8 @@ img {
 
 /*  LAYOUT */
 .header {
-  background-color: var(--header-bkg-color);
   background-image: url("../../images/header-moon-dep-2.jpg");
+  background-color: var(--header-bkg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
