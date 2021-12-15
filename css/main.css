@@ -97,7 +97,7 @@ img {
 
 /*  LAYOUT */
 .header {
-  background-image: url("../../images/header-moon-dep-2.jpg");
+  background-image: url("../images/header-moon-dep-2.jpg");
   background-color: var(--header-bkg-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -269,7 +269,7 @@ img {
   bottom: 0;
   right: 0;
   content: '';
-  background-image: url("../../images/jupiter_bkg.png");
+  background-image: url("../images/jupiter_bkg.png");
   background-repeat: no-repeat;
   opacity: 50%;
 }
