@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon_department</title>
+
+    <!-- Шрифты    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    
+    <!--   Нормализатор стилей   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+           <div class="header__institution">Institute of Astronomy of Kharkiv National University </div>
+           <h1 class="header__main_title"> Lunar-Planetary group </h1>
+           </div>
+
+        <ul class="header__planets">
+            <li class="header__planets_item">
+                <picture class="header__pic">
+                    <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/mercury_w50.png" alt="Mercury" />
+                </picture>
+                <div class="header__planets_text">
+                    Mercury
+                </div>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic_venus">
+                    <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/venus_w50.png" alt="Venus" />
+                </picture>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic_mars">
+                    <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/mars_w50.png" alt="Mars" />
+                </picture>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic_jupiter">
+                    <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/jupiter_w50.png" alt="Jupiter" />
+                </picture>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic_saturn">
+                    <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/saturn_w100.png" alt="Saturn" />
+                </picture>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic">
+                    <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/uranus_w80.png" alt="Uranus" />
+                </picture>
+            </li>
+            <li class="header__planets_item">
+                <picture class="header__pic">
+                    <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x" media="(min-width: 1200px)" />
+                    <img src="./images/neptune_w50.png" alt="Neptune" />
+                </picture>
+            </li>
+        </ul>
+        
+        <!-- Навигация -->
+        <nav class="header__nav">
+        <ul class="header__content">
+            <li class="header__content_item">
+                <button type="button" class="header__content_button"> <a href="./index.html" class="header__content_link">Home</a> </button>
+            </li>
+            <li class="header__content_item">
+                <button type="button" class="header__content_button"> <a href="./research-area.html" class="header__content_link">Research area</a> </button>
+            </li>
+            <li class="header__content_item">
+                <button type="button" class="header__content_button"> <a href="./publications.html" class="header__content_link">Publications </a></button>
+            </li>
+            <li class="header__content_item">
+                <button type="button" class="header__content_button"> <a href="./staff.html" class="header__content_link">Staff</a> </button>
+            </li>
+            <li class="header__content_item">
+                <button type="button" class="header__content_button"> <a href="./about.html" class="header__content_link">About us </a></button>
+            </li>
+        </ul>
+        </nav>
+
+
+
+</div>
+    </header>
+
+    <section class="hero">
+
+    </section>
+    
+</body>
+</html>
