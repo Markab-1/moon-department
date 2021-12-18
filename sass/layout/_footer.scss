@@ -23,5 +23,6 @@
 .footer__copyright {
   text-align: left;
   color: var(--text-color-dark);
+  @include font(12px, 500, 12px, 0.03em);
   margin-top: 10px;
 }
