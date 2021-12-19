@@ -4,7 +4,7 @@
 
   margin-top: calc(-1 * var(--card-gap));
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-left: calc(-1 * var(--card-gap));
   }
 }
@@ -15,7 +15,7 @@
 
   flex-basis: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 2 - 1 * var(--card-gap));
     margin-left: var(--card-gap);
   }
@@ -69,4 +69,23 @@
 
 .history__pic_1 {
   width: 100%;
+}
+
+.history__main {
+  position: relative;
+}
+
+.history__main::after {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  content: '';
+  background-image: url('../images/saturn_bkg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  z-index: -5;
 }

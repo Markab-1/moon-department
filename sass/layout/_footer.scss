@@ -26,3 +26,7 @@
   @include font(12px, 500, 12px, 0.03em);
   margin-top: 10px;
 }
+
+.footer__copyright_link {
+  color: var(--text-color-dark);
+}

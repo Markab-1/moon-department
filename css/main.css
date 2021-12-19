@@ -469,13 +469,66 @@ img {
   max-width: 90%;
 }
 
-.history__card_list {
+.people__main-caption {
+  margin: 20px 0 40px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.people__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-gap));
 }
 
 @media screen and (min-width: 768px) {
+  .people__list {
+    margin-left: calc(-1 * var(--card-gap));
+  }
+}
+
+.people__item {
+  flex-basis: 100%;
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .people__item {
+    flex-basis: calc(100% / 2 - 1 * var(--card-gap));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .people__item {
+    flex-basis: calc(100% / 4 - 1 * var(--card-gap));
+  }
+}
+
+.people__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+}
+
+.people__name {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+}
+
+.history__card_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-gap));
+}
+
+@media screen and (min-width: 1200px) {
   .history__card_list {
     margin-left: calc(-1 * var(--card-gap));
   }
@@ -488,7 +541,7 @@ img {
   margin-top: var(--card-gap);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .history__card_item {
     flex-basis: calc(100% / 2 - 1 * var(--card-gap));
     margin-left: var(--card-gap);
@@ -556,6 +609,24 @@ img {
   width: 100%;
 }
 
+.history__main {
+  position: relative;
+}
+
+.history__main::after {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  background-image: url("../images/saturn_bkg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  z-index: -5;
+}
+
 .footer {
   min-height: 100px;
   background-color: var(--footer-bkg-color);
@@ -588,5 +659,9 @@ img {
   line-height: 1;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+
+.footer__copyright_link {
+  color: var(--text-color-dark);
 }
 /*# sourceMappingURL=main.css.map */

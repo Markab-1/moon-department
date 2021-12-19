@@ -68,3 +68,40 @@
   max-height: 90%;
   max-width: 90%;
 }
+
+.people__main-caption {
+  margin: 20px 0 40px 0;
+  @include font(16px, 700, 24px, 0.03em);
+}
+
+.people__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-gap));
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * var(--card-gap));
+  }
+}
+
+.people__item {
+  flex-basis: 100%;
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 1 * var(--card-gap));
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 1 * var(--card-gap));
+  }
+}
+
+.people__text {
+  @include font(14px, 400, 24px, 0.03em);
+}
+
+.people__name {
+  font-style: italic;
+  @include font(16px, 700, 24px, 0.03em);
+}
