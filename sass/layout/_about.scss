@@ -16,7 +16,7 @@
 }
 
 .collab__section {
-  background-color: var(--section-bkg-color);
+  background-color: rgba(162, 162, 255, 0.2);
 }
 
 .collab__list {
@@ -70,7 +70,7 @@
 }
 
 .people__main-caption {
-  margin: 20px 0 40px 0;
+  margin-top: 20px;
   @include font(16px, 700, 24px, 0.03em);
 }
 
@@ -104,4 +104,31 @@
 .people__name {
   font-style: italic;
   @include font(16px, 700, 24px, 0.03em);
+}
+
+.about__main {
+  position: relative;
+}
+
+.about__main::after {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  content: '';
+  background-image: url('../images/mars_bkg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  z-index: -5;
+}
+
+.people__title {
+  margin-bottom: 30px;
+}
+
+.people__section {
+  background-color: rgba(162, 162, 255, 0.2);
 }
