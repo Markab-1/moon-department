@@ -15,6 +15,45 @@
   @include font(14px, 700, 16px, 0.03em);
 }
 
+.team__parts {
+  display: inline-flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.team__contacts {
+  margin-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 0;
+  }
+  padding: 20px;
+}
+
+.team__address {
+  @include font(14px, 700, 24px, 0.03em);
+}
+
+.team__contact_link {
+  @include font(14px, 500, 16px, 0.03em);
+  color: var(--text-color-dark);
+}
+
+.team__map {
+  display: inline-block;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+  height: 300px;
+  margin-top: 20px;
+}
+
 .collab__section {
   background-color: rgba(162, 162, 255, 0.2);
 }
